@@ -7,15 +7,35 @@
         <style>
             .name {
                 font-family: "Libre Baskerville", sans-serif;
+                text-align: center;
             }
 
             .description {
                 font-family: "IMB Plex Sans", sans-serif;
                 line-height: 50%;
+                text-align:center;
+                color: #364958;
+                background-color: #9ba2ff; 
+                padding: 1%;
             }
 
             body {
                 background-color: #FFFBFC;
+            }
+            .photo {
+                border-radius: 35%;
+                display: flex;
+                margin-left: 42%;
+            }
+
+            .internal-links{ 
+                display: flex;
+                font-size: 20px;  
+            }
+
+            .internal-links h4 a {
+                margin-right: 10px;
+                text-decoration: none;
             }
 
         </style>
@@ -23,11 +43,15 @@
 	<body>
         <img class="photo" src="/ygor-manhattan.jpeg" alt="Foto Ygor em Manhattan" width="200">
         <h1 class="name">Ygor Vitor Marques da Fonseca</h1>
-        <h2 class="description">Nacionalidade: Brasileiro</h2>
-        <h2 class="description">Cidade/estado: Rio de Janeiro / RJ</h2>
-        <h4><a href="#habilidades">Top habilidades</a></h4>
-        <h4><a href="#foto">Ver foto</a></h4>
-        <h4><a href="#techmundo">Conheça o Techmundo</a></h4>
+        <div class="description">
+            <h2>Nacionalidade: Brasileiro</h2>
+            <h2>Cidade/estado: Rio de Janeiro / RJ</h2>
+        </div>
+        <div class="internal-links">
+            <h4><a href="#habilidades">Top habilidades</a></h4>
+            <h4><a href="#foto">Ver foto</a></h4>
+            <h4><a href="#techmundo">Conheça o Techmundo</a></h4>
+        </div>
         <h2 id="habilidades">Top habilidades</h2>
         <ul>
             <li><em>Conhecimento básico em python</em></li>
