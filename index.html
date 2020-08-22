@@ -39,6 +39,12 @@
                 text-decoration: none;
             }
 
+            .container-habilidades {
+                display: flex;
+                font-size: 20px;
+                justify-items: center;
+            }
+
         </style>
 	</head>
 	<body>
@@ -54,14 +60,39 @@
             <h4><a href="#foto">Ver foto</a></h4>
             <h4><a href="#techmundo">Conheça o Techmundo</a></h4>
         </div>
-        <h2 id="habilidades">Top habilidades</h2>
-        <ul>
-            <li><em>Conhecimento básico em python</em></li>
-            <li><em>Conhecimento avançado em inglês</em></li>
-            <li><em>Conhecimento avançado em Matemática e Física</em></li>
-            <li><em>Conhecimento básico em git</em></li>
-            <li><em>Conhecimento básico em edição de vídeos e fotos</em></li>
-        </ul>
+        <div class="container-habilidades">
+            <div class="habilidades-descricao">
+                <h2 id="habilidade-header">Top habilidades</h2>
+                <ul>
+                    <li><em>Conhecimento básico em <strong>python</strong></em></li>
+                    <li><em>Conhecimento avançado em <strong>inglês</strong></em></li>
+                    <li><em>Conhecimento avançado em <strong>Matemática e Física</strong></em></li>
+                    <li><em>Conhecimento básico em <strong>Git</strong></em></li>
+                    <li><em>Conhecimento básico em edição de <strong>vídeos e fotos</strong></em></li>
+                    <li><em>Conhecimento básico em <strong>HTML, CSS e Java Script</strong></em></li>
+                </ul>
+            </div>  
+            <div class="logos">
+                <table>
+                    <tr>
+                        <td><img src="/css-logo.png" alt="CSS logo" width="60"></td>
+                        <td><img src="/html-logo.png" alt="HTML5 logo" width="85"></td>
+                        <td><img src="/javaScript-logo.png" alt="Java Script Logo" width="78"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/photo-shop.png" alt="Photo Shop Logo" width="80"></td>
+                        <td><img src="/adobe-premier.png" alt="Adobe Premiere Logo" width="79"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/git-logo.png" alt="Git logo" width="80"></td>
+                        <td><img src="/python-logo.png" alt="Python Logo" width="70"></td>
+                    </tr>
+                
+                
+                
+                </table>
+            </div>
+        </div>
         <a id="foto" href="/ygor-manhattan.jpeg"> Ver foto</a>
         <p id="techmundo">Conheça o Techmundo, um blog <strong>TOP</strong> de notícias sobre tecnologia e muito mais.Acesse clicando <a href="https://www.tecmundo.com.br/" target="_blank">aqui</a>.</p>
     </body>
