@@ -37,12 +37,24 @@ body {
 }
 
 .container-habilidades {
+    background-color:  #e4e4e4;
     display: flex;
-    font-size: 23px;
-    justify-content: space-between;
-    margin-right: 25%;
-    margin-left: 25%;
-    border-color: black;
-    border: solid 1px;
-    align-items: flex-start;
+    margin: auto;
+    font-size: 27px;
+    font-family: 'Nunito', sans-serif;
+    justify-content: space-around;
+    border: solid 3px;
+    border-radius: 1%;
+    height: 380px;
+    width: 1200px;
+}
+
+.habilidades-descricao, .logos {
+    margin-top: 50px;
+    height: 300px;
+    line-height: 37px;
+}
+
+#habilidade-header {
+    margin-top: 0;
 }
