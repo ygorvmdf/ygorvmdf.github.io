@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(253 , 251 , 251);
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  background-color: rgb(118 , 113 , 149);
+  width: 1900px;
+  height: 200px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#cabecalho nav {
+  text-align: start;
+  background-color: rgb(13 , 236 , 188);
+  vertical-align: text-bottom;
+  height: 45px;
+  margin-top: 90px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(13 , 236 , 188);
+}
+
+#cabecalho nav a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 9px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#corpo {
+  margin-top: 200px;
+}
+
+p , li {
+  font-size: 20px;
+}
+
+.licoes {
+  display: inline-block;
+  margin-left: 130px;
+  margin-top: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 30px;
+}
+
+.aprendizado {
+  display: inline-block;
+  width: 700px;
+  margin-left: 180px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  vertical-align: top;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 30px;
+}
+
+footer {
+  background-color: rgb(118 , 113 , 149);
+  padding: 20px;
+  color: rgb(253 , 251 , 251);
+}
+
+#apresentacao {
+  display: flex;
+  margin-left: 125px;
+  margin-top: 310px;
+}
+
+#minha_foto {
+  max-width: 200px;
+  border-radius: 20% 0 0 20%;
+}
