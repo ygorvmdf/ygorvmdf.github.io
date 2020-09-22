@@ -1,0 +1,173 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: floralwhite;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  color: rgb(151, 167, 167);
+}
+
+header {
+  background-color: rgb(86, 90, 139);
+  border-bottom: 2px solid black;
+  height: 240px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.color-pallete {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px auto;
+  width: 750px;
+}
+
+.buttons > * {
+  margin-right: 12px;
+}
+
+.color {
+  border: 1px solid black;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.pixel {
+  border: 1px solid black;
+  display: inline-block;
+  height: 40px;
+  margin: 0;
+  width: 40px;
+}
+
+.red {
+  opacity: 100%;
+  background-color: red;
+}
+
+.black {
+  opacity: 100%;
+  background-color: black;
+}
+
+.blue {
+  opacity: 100%;
+  background-color: blue;
+}
+
+.green {
+  opacity: 100%;
+  background-color: green;
+}
+
+.brown {
+  opacity: 100%;
+  background-color: brown;
+}
+
+.grey {
+  opacity: 100%;
+  background-color: grey;
+}
+
+.yellow {
+  opacity: 100%;
+  background-color: yellow;
+}
+
+.purple {
+  opacity: 100%;
+  background-color: purple;
+}
+
+.white {
+  opacity: 100%;
+  background-color: white;
+}
+
+.maroon {
+  opacity: 100%;
+  background-color: maroon;
+}
+
+.pink {
+  opacity: 100%;
+  background-color: pink;
+}
+
+.lightblue {
+  opacity: 100%;
+  background-color: lightblue;
+}
+
+.lightgreen {
+  opacity: 100%;
+  background-color: lightgreen;
+}
+
+.salmon {
+  opacity: 100%;
+  background-color: salmon;
+}
+
+.orange {
+  opacity: 100%;
+  background-color: orange;
+}
+
+.no-color {
+  text-align: center;
+  font-size: 37px;
+  background-color: none;
+}
+
+.pixels-container {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.div-row {
+  height: 40px;
+}
+
+.board-image {
+  background-size: 100% 100%;
+}
+
+.insert-image > * {
+  display: block;
+}
+
+.format-board {
+  display: flex;
+  align-items: flex-start;
+}
+
+.format-board input {
+  border-radius: 5px;
+  height: 50px;
+  font-size: 40px;
+  padding: 0;
+  width: 70px;
+}
+
+.format-board button {
+  height: 53px;
+  padding: 0;
+  width: 50px;
+}

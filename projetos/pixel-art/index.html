@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Paleta de Cores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title" class="title">Paleta de Cores</h1>
+        <div id="color-palette" class="color-pallete">
+            <div class="color no-color">X</div>
+            <div id="first-selected" class="color black selected"></div>
+            <div class="color white"></div>
+            <div class="color red"></div>
+            <div class="color blue"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </div>
+        <section id="buttons" class="buttons">
+            <button id='clear-board'>Limpar</button>
+            <div class="format-board">
+                <input id="board-size" type="number" max="50" min="1" value="5">
+                <button id="generate-board">VQV</button>
+            </div>
+            <button id="change-colors" class="change-colors">Trocar</button>
+            <div class="insert-image">
+                <label for="background-image">Pinte sobre uma imagem</label>
+                <input id='background-image' type="file" accept="image/*">
+            </div>
+            <button id="clear-photo" class="clear-photo">Remover foto</button>
+        </section>
+    </header>
+    <div id="pixels-container" class="pixels-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
