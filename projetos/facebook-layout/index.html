@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" class="top-bar">
+        <div class="header-subcontainer">
+            <img class="facebook-logo" src="imgs/facebook-logo.png" alt="facebook logo">
+            <div class="login-container">
+                <form class="facebook-login">
+                    <div class="form-group">
+                        <label for="email-input">Email or Phone</label>
+                        <input class="email-input" id="email-input" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password-input">Password</label>
+                        <input class="password-input" id="password-input" type="password">
+                    </div>
+                    <div class="form-group">
+                        <button id="login-button" class="login-button" type="submit">Log In</button>
+                    </div>
+                </form>
+                <a href="#">Forgotten account?</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <section class="left-content">
+                <p>Facebook helps you connect and share with the people in your life</p>
+                <img src="imgs/networking.png" alt="networking image">
+            </section>
+            <section class="right-content">
+                <h1 class="form-title">Create an account</h1>
+                <h2 class="form-subtitle">it's free and always will be</h2>
+                <form id="signup-form" class="signup-form">
+                    <div class="name-container">
+                        <input name="firstname" classs="first-name-input" type="text" placeholder="First name" required>
+                        <input name="lastname" classs="last-name-input" type="text" placeholder="Surname" required>
+                    </div>
+                    <input name="phone_email" type="text" id="email-signup" class="email-input"
+                        placeholder="Mobile number or email adress" required>
+                    <input name="password" type="password" id="new-password-input" class="new-password-input"
+                        placeholder="New password" required>
+                    <div class="birthday-container">
+                        <label id="label-birthdate" class="birthday-title">Birthday</label>
+                        <div class='birthday-wraper'>
+                            <input type="date" required>
+                            <p>
+                                <a href="#">Why do I need to provide my date of birth?</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gender-container">
+                        <label id="label-gender">Gender</label>
+                        <div class="gender-inputs">
+                            <div class="female-input">
+                                <input id="female-radio" type="radio" name="gender" value="female" required checked>
+                                <label for="female-radio">Female</label>
+                            </div>
+                            <div class="male-input">
+                                <input id="male-radio" type="radio" name="gender" value="male" required>
+                                <label for="male-radio">Male</label>
+                            </div>
+                            <div class="custom-input">
+                                <input id="custom-radio" type="radio" name="gender" value="custom" required>
+                                <label for="custom-radio">Custom</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="custom-options" class="custom-options hidden-input">
+                        <select name="pronoun-selector" id="pronoun-selector" required>
+                            <option value="none" selected>Select your pronoun</option>
+                            <option value="she">She: "Wish her a happy birthday!"</option>
+                            <option value="he">He: "Wish him a happy birthday!"</option>
+                            <option value="they">They: "Wish them a happy birthday!"</option>
+                        </select>
+                        <input type="text" name="gender-custom" id="custom-gender" placeholder="Gênero (opcional)">
+                    </div>
+                    <div id="hidden-input" class="hidden-input invalid-field">
+                        <p>Invalid fields!</p>
+                    </div>
+                    <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a
+                            href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any
+                        time.</p>
+                    <button id="facebook-register" type="submit">Sign up</button>
+                </form>
+            </section>
+            <section id="mobile-container" class="mobile-container">
+                <form id="mobile-form" class="mobile-form">
+                    <input type="text" name="number-email" placeholder="Mobile number or email adress">
+                    <input type="password" name="password" placeholder="password">
+                    <button type="submit">Sign in</button>
+                </form>
+                <div class="separator">
+                    <hr><span>ou</span><hr> 
+                </div>
+                <button class="new-account-button" type="button">New account</button>
+                <a href="#">Forgotten password?</a>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
