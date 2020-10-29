@@ -1,9 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .top-bar {
   align-items: center;
+  background: linear-gradient(rgb(236, 236, 0),rgb(240, 255, 108));
   display: flex;
   height: 100px;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  justify-content: center;
   width: 100%;
 }
 
@@ -12,12 +21,39 @@
   display: flex;
 }
 
-.top-bar .input-terms-group {
-  align-items: flex-start;
+.top-bar input {
+  background-color: snow;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.2em;
+  font-weight: 500;
+  height: 28%;
+  margin-right: 5px;
+  padding-left: 8px;
+  width: 40%;
+}
+
+.top-bar button {
+  background-color: snow;
+  border: 1px solid #ccc;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 1.1em;
+  height: 30px;
+  width: 7%;
+
+  transition: .3s;
+}
+
+.top-bar button:hover {
+  background-color: #ccc;
+  cursor: pointer;
 }
 
 .container {
+  background: rgb(241, 241, 241);
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -31,7 +67,8 @@
 }
 
 .item {
-  border: 2px solid blue;
+  background: white;
+  border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
   display: flex;
@@ -56,7 +93,7 @@
 }
 
 .item .item__add {
-  background-color: green;
+  background-color: yellow;
   border: 0;
   cursor: pointer;
   margin: 0;
