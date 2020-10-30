@@ -102,25 +102,76 @@ body {
 }
 
 .cart {
-  background-color: white;
+  background-color: black;
   border-radius: 5px;
   box-shadow: 1px 1px 5px grey;
+
   display: flex;
-  position: fixed;
-  flex-basis: 30%;
+  align-items: center;
   flex-flow: column wrap;
   justify-content: space-between;
+  flex-basis: 30%;
+
+  position: fixed;
   height: 75%;
-  padding: 8px;
   right: 3%;
-  top: 13%;
+  top: 130px;
+  
+  padding: 8px;
   width: 25%;
 }
 
 .cart .cart__title {
+  background-color: black;
+  color: yellow;
+  margin-top: 12px;
   flex-basis: 1;
-  font-size: 16pt;
+  font-size: 25pt;
   text-align: center;
+}
+
+.cart .items-cart-wrapper {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 75%;
+  width: 90%;
+  overflow: auto;
+  padding: 25px;
+}
+
+.cart .items-cart-wrapper .cart__item {
+  margin: 0 0 10px 8px;
+}
+
+.cart .cart-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2em;
+  color: white;
+  height: 5%;
+  width: 95%;
+  margin-bottom: 5px;
+}
+
+.cart .cart-footer button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 45%;
+  font-size: 1em;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.cart .cart-footer button:hover {
+  background-color: rgb(224, 221, 221); 
 }
 
 .loading {
