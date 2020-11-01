@@ -86,7 +86,7 @@ const fetchItemById = (event) => {
     .then(sumPricesAssync);
 };
 
-const fecthProductList = (product) => {
+const fecthProductList = (product = 'computer') => {
   const productQuery = `https://api.mercadolibre.com/sites/MLB/search?q=${product}`;
   fetch(productQuery)
     .then(response => response.json())
@@ -127,10 +127,30 @@ const createCartFromLocalStorage = () => {
   }
 };
 
+const removeBodyProducts = () => {
+  const itemInTheList = document.getElementsByClassName('item');
+  const itemsList = document.getElementById('items');
+  while (itemInTheList.length > 0) {
+    itemsList.removeChild(itemInTheList.item(0));
+  }
+}
+
+const searchForNewProduct = () => {
+  const searchProduct = document.getElementById('search-input').value;
+  if (searchProduct === '') {
+    window.alert('Please insert a non empty value');
+    return;
+  }
+  removeBodyProducts();
+  createLoadText();
+  fecthProductList(searchProduct);
+}
+
 window.onload = function onload() {
   createLoadText();
   createCartFromLocalStorage();
-  fecthProductList('computer');
+  fecthProductList();
   sumPricesAssync();
   document.getElementById('empty-cart').addEventListener('click', emptyCart);
+  document.getElementById('search-button').addEventListener('click', searchForNewProduct);
 };
