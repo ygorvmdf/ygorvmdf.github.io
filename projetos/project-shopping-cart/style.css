@@ -30,7 +30,7 @@ body {
   height: 28%;
   margin-right: 5px;
   padding-left: 8px;
-  width: 40%;
+  width: 700px;
 }
 
 .top-bar button {
@@ -42,7 +42,7 @@ body {
   border-radius: 6px;
   font-size: 1.1em;
   height: 30px;
-  width: 7%;
+  width: 120px;
 
   transition: .3s;
 }
@@ -61,10 +61,12 @@ body {
 
 .items {
   display: flex;
-  flex-basis: 70%;
   flex-wrap: wrap;
+  flex-shrink: 2;
   justify-content: center;
   margin-top: 15px;
+  margin-left: 5vw;
+  width:  65vw;
 }
 
 .item {
@@ -74,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
-  margin: 5px;
+  margin: 15px 5px 5px 5px;
   box-shadow: 1px 1px 5px grey;
   width: 200px;
 }
@@ -106,6 +108,12 @@ body {
   background-color: rgb(219, 219, 0);
 }
 
+.fake-container {
+  flex-shrink: 1;
+  height: 100vh;
+  width: 650px;
+}
+
 .cart {
   background-color: black;
   border-radius: 5px;
@@ -118,10 +126,10 @@ body {
   flex-basis: 30%;
 
   position: fixed;
-  height: 75%;
   right: 3%;
   top: 130px;
-  
+
+  height: 700px;
   padding: 8px;
   width: 485px;
 }

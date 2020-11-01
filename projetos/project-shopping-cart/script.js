@@ -81,7 +81,7 @@ const fetchItemById = (event) => {
       return createCartItemElement(object);
     })
     .then((item) => {
-      document.getElementsByClassName('cart__items')[0].appendChild(item);
+      document.getElementById('cart__items').appendChild(item);
     })
     .then(sumPricesAssync);
 };
